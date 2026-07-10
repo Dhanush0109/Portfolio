@@ -4,309 +4,357 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhanush Portfolio</title>
+    <meta
+      name="description"
+      content="Dhanush S is a Java Backend Developer specializing in Spring Boot, REST APIs, SQL, and production support."
+    />
+    <title>Dhanush S | Java Backend Developer</title>
+    <link rel="icon" href="./assets/profile-pic.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Dhanush S</div>
-      <div>
+    <div class="page-shell">
+      <nav id="desktop-nav" class="nav-bar">
+        <a class="logo" href="#home">Dhanush S</a>
         <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Dhanush S</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Dhanush S profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Dhanush S</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Dhanush S Resume.pdf')"
-          >
-            Download CV
+      </nav>
+
+      <nav id="hamburger-nav" class="nav-bar">
+        <a class="logo" href="#home">Dhanush S</a>
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" aria-label="Toggle menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/dhanush-s-7b6154225/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Dhanush0109/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Skills icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Fresher <br />Software Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelors Degree<br />
-              <p>Mechanical Engineering<br/>
-            </div>
+          <div class="menu-links">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#skills" onclick="toggleMenu()">Skills</a>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
           </div>
-          <div class="text-container">
-            <p>
-              Welcome to my portfolio! I am a passionate Web developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in creating visually appealing, responsive, and user-friendly web applications. My dedication to continuous learning and staying up-to-date with the latest web technologies drives my commitment to delivering high-quality digital Skillss.
-              I thrive in collaborative environments and enjoy working with cross-functional teams to bring creative concepts to life. With a keen eye for design and a focus on usability, I aim to enhance user Skillss through innovative solutions.
-              Thank you for visiting my portfolio. I look forward to the opportunity to work on exciting projects and contribute to your success.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#skills'"
-      />
-    </section>
-    <section id="skills">
-      <p class="section__text__p1">Known</p>
-      <h1 class="title">Skills</h1>
-      <div class="Skills-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Programming Language</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  
-                </div>
-              </article>
-               
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Concepts</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OOp</h3>
-                  
-                </div>
-              </article>
-                         
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="Skills-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              
-            </div>
-            <h2 class="Skills-sub-title project-title">Tic Tac Toe game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dhanush0109/Projects'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              
-            </div>
-            <h2 class="Skills-sub-title project-title">Netflix Clone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dhanush0109/Projects'"
-              >
-                Github
-              </button>
-              
-                
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              
-            </div>
-            <h2 class="Skills-sub-title project-title">Bus Reservation</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dhanush0109/Projects/'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:dhanushshanmugaraj@gmail.com">dhanushshanmugaraj@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://linkedin.com/in/dhanush-s-7b6154225">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Dhanush S. All Rights Reserved.</p>
-    </footer>
+
+      <main>
+        <section id="home" class="hero section reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Java Backend Developer in Bengaluru</p>
+            <h1>Building reliable backend systems with Spring Boot, REST APIs, and SQL.</h1>
+            <p class="lead">
+              Results-driven software engineer with hands-on experience developing enterprise backend
+              applications, diagnosing production issues, and shipping clean API layers that are easy to test
+              and maintain.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./assets/Dhanush_S_Resume_Updated.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+              <a class="btn btn-secondary" href="#projects">View Projects</a>
+            </div>
+
+            <div class="hero-pills" aria-label="Key skills">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>REST APIs</span>
+              <span>MySQL</span>
+              <span>Oracle SQL</span>
+              <span>Postman</span>
+            </div>
+
+            <div class="hero-stats">
+              <article class="stat-card">
+                <strong>1+</strong>
+                <span>years in backend engineering</span>
+              </article>
+              <article class="stat-card">
+                <strong>3</strong>
+                <span>featured projects on the resume</span>
+              </article>
+              <article class="stat-card">
+                <strong>Enterprise</strong>
+                <span>layered MVC and API development</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="profile-frame">
+              <img src="./assets/profile-pic.jpg" alt="Dhanush S profile picture" />
+            </div>
+            <div class="profile-meta">
+              <p class="profile-role">Java Backend Developer</p>
+              <h2>Dhanush S</h2>
+              <p>
+                Focused on Spring Boot, RESTful APIs, database reliability, and production support.
+              </p>
+            </div>
+            <div class="profile-grid">
+              <div>
+                <span class="profile-label">Location</span>
+                <strong>Bengaluru, India</strong>
+              </div>
+              <div>
+                <span class="profile-label">Education</span>
+                <strong>B.E. Mechanical Engineering</strong>
+              </div>
+              <div>
+                <span class="profile-label">Focus</span>
+                <strong>Java, Spring Boot, SQL</strong>
+              </div>
+              <div>
+                <span class="profile-label">Open To</span>
+                <strong>Backend and full-stack roles</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Clear backend thinking, clean execution.</h2>
+          </div>
+
+          <div class="about-layout">
+            <div class="about-copy card">
+              <p>
+                I design and support Java backend applications with a practical focus on reliability,
+                readability, and testability. My day-to-day work covers Spring Boot services, API design,
+                SQL validation, production debugging, and team collaboration through Git and Agile delivery.
+              </p>
+              <p>
+                Beyond implementation, I like shaping the full flow of a backend feature: tracing data through
+                the stack, checking API behavior in Postman, writing SQL that exposes issues quickly, and
+                keeping the codebase easy to maintain for the next engineer.
+              </p>
+            </div>
+
+            <div class="about-highlights">
+              <article class="highlight card">
+                <span>Experience</span>
+                <strong>Software Engineer - Java Backend at LTM</strong>
+                <p>Working on Spring Boot applications, REST services, and production issue resolution.</p>
+              </article>
+              <article class="highlight card">
+                <span>Approach</span>
+                <strong>Layered architecture and end-to-end validation</strong>
+                <p>Controller, service, and repository layers backed by SQL checks and Postman tests.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Backend-first stack with practical tooling.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="card skill-card">
+              <h3>Languages</h3>
+              <div class="chip-list">
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+              </div>
+            </article>
+            <article class="card skill-card">
+              <h3>Backend</h3>
+              <div class="chip-list">
+                <span>Spring Boot</span>
+                <span>Spring MVC</span>
+                <span>Spring Data JPA</span>
+                <span>Hibernate</span>
+                <span>REST APIs</span>
+                <span>Microservices</span>
+              </div>
+            </article>
+            <article class="card skill-card">
+              <h3>Data</h3>
+              <div class="chip-list">
+                <span>MySQL</span>
+                <span>Oracle SQL</span>
+                <span>PL/SQL</span>
+                <span>Query Tuning</span>
+              </div>
+            </article>
+            <article class="card skill-card">
+              <h3>Tools</h3>
+              <div class="chip-list">
+                <span>Git</span>
+                <span>Maven</span>
+                <span>Postman</span>
+                <span>IntelliJ IDEA</span>
+                <span>Linux</span>
+                <span>Shell Scripting</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Hands-on delivery in both product and support contexts.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">Software Engineer - Java Backend</span>
+                  <h3>LTM</h3>
+                </div>
+                <span class="timeline-date">May 2025 - Present</span>
+              </div>
+              <ul>
+                <li>Build and maintain Java backend services using Spring Boot and REST API design principles.</li>
+                <li>Debug production issues through log analysis, root-cause tracing, and targeted fixes.</li>
+                <li>Write and optimize SQL queries across MySQL and Oracle for integrity checks and validation.</li>
+                <li>Support API testing, monitoring workflows, and Agile collaboration with Git and peer reviews.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">WordPress Web Developer Intern</span>
+                  <h3>GAO Tek Inc.</h3>
+                </div>
+                <span class="timeline-date">Jun 2024 - Sep 2024</span>
+              </div>
+              <ul>
+                <li>Customized WooCommerce components with PHP, JavaScript, and HTML/CSS.</li>
+                <li>Worked across sprint cycles to review, test, and release features collaboratively.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work from the resume.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="card project-card">
+              <div class="project-topline">
+                <span>Featured Backend System</span>
+                <span>Spring Boot + MySQL</span>
+              </div>
+              <h3>Employee Directory Management System</h3>
+              <p>
+                Layered MVC backend with CRUD REST endpoints, JPA/Hibernate persistence, and API validation
+                through Postman and direct SQL checks.
+              </p>
+              <div class="chip-list compact">
+                <span>Controller-Service-Repository</span>
+                <span>REST CRUD</span>
+                <span>Spring Data JPA</span>
+                <span>Hibernate</span>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-topline">
+                <span>Portfolio Platform</span>
+                <span>Spring Boot + GitHub Pages</span>
+              </div>
+              <h3>Professional Portfolio Website</h3>
+              <p>
+                Backend-driven portfolio concept that exposed content through Spring Boot endpoints while keeping
+                source control and deployment cleanly organized.
+              </p>
+              <div class="chip-list compact">
+                <span>API-driven content</span>
+                <span>Git workflow</span>
+                <span>Performance tuning</span>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-topline">
+                <span>Core Java Application</span>
+                <span>OOP Practice</span>
+              </div>
+              <h3>Bus Reservation System</h3>
+              <p>
+                Menu-driven console application focused on encapsulation, inheritance, polymorphism, and record
+                management for reservations and cancellations.
+              </p>
+              <div class="chip-list compact">
+                <span>Encapsulation</span>
+                <span>Inheritance</span>
+                <span>Polymorphism</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="education" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Education & Certifications</p>
+            <h2>Formal training plus targeted technical certifications.</h2>
+          </div>
+
+          <div class="education-grid">
+            <article class="card education-card">
+              <h3>B.E. Mechanical Engineering</h3>
+              <p>Kongu Engineering College, Erode</p>
+              <span>CGPA: 7.36 / 10 | 2021 - 2025</span>
+            </article>
+            <article class="card education-card">
+              <h3>Certifications</h3>
+              <p>Java Basic, Java SE Beginner, Spring Boot for Beginners, Unix & Shell Scripting Fundamentals</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+          <div class="contact-panel card">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2>Available for backend and full-stack opportunities.</h2>
+              <p class="contact-copy">
+                If you want a Java backend developer who can own APIs, data validation, and production debugging,
+                reach out directly.
+              </p>
+            </div>
+
+            <div class="contact-links">
+              <a href="mailto:dhanushshanmugaraj@gmail.com">dhanushshanmugaraj@gmail.com</a>
+              <a href="https://linkedin.com/in/dhanush-s-7b6154225" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+              <a href="https://github.com/Dhanush0109" target="_blank" rel="noreferrer">GitHub Profile</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Copyright &copy; <span id="year"></span> Dhanush S. All Rights Reserved.</p>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

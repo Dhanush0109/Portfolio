@@ -1,103 +1,95 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+@media screen and (max-width: 1100px) {
+  .hero,
+  .about-layout,
+  .contact-panel {
+    grid-template-columns: 1fr;
   }
-  .about-containers {
-    flex-wrap: wrap;
+
+  .hero {
+    min-height: auto;
+    padding-top: 2rem;
   }
-  #contact,
-  #projects {
-    height: fit-content;
+
+  .hero-copy h1 {
+    max-width: 100%;
+  }
+
+  .skills-grid,
+  .project-grid,
+  .education-grid,
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-card {
+    max-width: 560px;
+    justify-self: start;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 820px) {
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+
+  .section {
+    padding-top: 4rem;
   }
-  #profile,
-  .section-container {
-    display: block;
+
+  .hero-stats,
+  .skills-grid,
+  .project-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
   }
-  .arrow {
-    display: none;
+
+  .profile-grid {
+    grid-template-columns: 1fr;
   }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
+
+  .timeline-header,
+  .project-topline {
+    flex-direction: column;
+    align-items: start;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  .page-shell {
+    width: min(calc(100% - 1rem), var(--content-width));
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 14vw, 3.5rem);
   }
-  article {
-    font-size: 1rem;
+
+  .lead,
+  .about-copy p,
+  .highlight p,
+  .project-card p,
+  .education-card p,
+  .contact-copy,
+  .timeline-item li,
+  .profile-meta p {
+    font-size: 0.96rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+
+  .card,
+  .hero-card {
+    padding: 1rem;
   }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+
+  .hero-actions,
+  .contact-links {
+    width: 100%;
   }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
+
+  .contact-links a {
+    min-width: 0;
+    width: 100%;
   }
 }
